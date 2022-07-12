@@ -2,7 +2,7 @@ name: test_task
 on: [push]
 jobs:
   test_execution:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
