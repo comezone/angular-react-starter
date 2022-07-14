@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: run ng:build
+      - run: ng:build
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
